@@ -1,0 +1,28 @@
+server:
+  port: 5000
+---
+environment: production
+myCustomVar:
+  customVar: Undefined
+  customInt1: 422
+  customInt2: 666
+spring:
+  config:
+    activate:
+      on-profile: prod
+name: prod-YAML
+server:
+  port: 7070
+---
+environment: testing
+myCustomVar:
+  customVar: Hablame
+  customInt1: 1
+  customInt2: 67
+spring:
+  config:
+    activate:
+      on-profile: test
+name: test-YAML
+server:
+  port: 4000
